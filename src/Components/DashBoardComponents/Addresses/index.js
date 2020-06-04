@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import RouterLink from '../../RouterLink';
 import GradientButton from '../../GradientButton';
 import Card from '@material-ui/core/Card';
+import Map from '../../Map/Map';
 
 class Addresses extends Component {
     render() {
@@ -17,7 +18,7 @@ class Addresses extends Component {
                 </Grid>
 
                 <Grid item xs={12} sm={12} md={12}>
-                    <Card style={{ padding: 20 }} raised={true}>
+                    <Card style={{ padding: 20}} raised={true}>
                         <form>
                             <Grid container spacing={1}>
                                 <Grid item xs={12}>
@@ -60,6 +61,18 @@ class Addresses extends Component {
                                         />
                                     </Grid>
                                 </Grid>
+
+                                
+                                    <Grid item xs={12}>
+                                            <Map
+                                                // google={this.props.google}
+                                                center={{lat: 18.5204, lng: 73.8567}}
+                                                height='300px'
+                                                zoom={15}
+                                            />
+                                    </Grid>
+
+                            
 
                             </Grid>
 

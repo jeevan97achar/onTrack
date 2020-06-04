@@ -8,6 +8,7 @@ import Identities from './Components/DashBoardComponents/Identities'
 import Phones from './Components/DashBoardComponents/Phones'
 import MyJobProfile from './Components/DashBoardComponents/MyJobProfile'
 import Messages from './Components/DashBoardComponents/Messages'
+import Map from './Components/Map/Map'
 
 class App extends React.PureComponent {
   render() {
@@ -24,6 +25,7 @@ class App extends React.PureComponent {
             <Route exact path='/MyJobProfile' component={MyJobProfile} />
             <Route exact path='/messages' component={Messages} />
             <Route exact path='/profiles' component={LandingPage} />
+            <Route exact path='/map' component={Map} />
           </Switch>
         </div>
       </Router>
